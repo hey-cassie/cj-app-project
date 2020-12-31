@@ -1,0 +1,55 @@
+/*.green-bg {
+    background-color: #B0D57D;
+}
+
+.header-custom {
+    max-height: 500px;
+  }
+
+  .jumbotron {
+    color: white;
+    background-image: url("/assets/images/bgTest2.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+  }*/
+
+  .jumbotron {
+    background-image: url("/assets/images/bgTest2.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 540px;
+  }
+
+  /*.jumbotron {
+    background-image: url("/assets/images/bgTest2.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 540px;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+  }*/
+
+  .box {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    /*flex-direction: column;*/
+    text-align: center;
+  }
+  
+  .box div {
+    width: 100%;
+    height: 540px;
+    background-image: url("/assets/images/bgTest2.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 540px;
+  }

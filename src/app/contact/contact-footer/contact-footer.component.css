@@ -1,0 +1,14 @@
+.orange-bg {
+    background-color: #F79221;
+}
+
+.navbar-custom {
+    height: 300px;
+  }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}

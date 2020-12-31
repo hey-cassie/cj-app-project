@@ -1,0 +1,36 @@
+.orange-bg {
+    background-color: #9989C1;
+}
+
+.navbar-custom {
+    height: 300px;
+  }
+
+  .border-2 {
+    border-width:2px !important;
+}
+
+.btn:hover {
+    background-color: black !important;
+    color: #F79221 !important;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    flex-direction: row;
+  }
+  
+  .box div {
+    width: 100%;
+    height: 60px;
+    background-color: black;
+  }
