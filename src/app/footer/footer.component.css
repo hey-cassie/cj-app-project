@@ -8,6 +8,7 @@
 
   .border-2 {
     border-width:2px !important;
+    border-radius:30px !important;
 }
 
 .btn:hover {
