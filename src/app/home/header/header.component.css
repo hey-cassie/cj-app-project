@@ -16,6 +16,7 @@
   }*/
 
   .jumbotron {
+    position: fixed;
     background-image: url("/assets/images/bgTest2.svg");
     background-position: center;
     background-repeat: no-repeat;
