@@ -39,7 +39,7 @@
     z-index: 1;
     position: relative;
     padding: 20px 46px;
-    /*margin-bottom: 30px;*/
+    margin-bottom: -30px;
     font-family: Montserrat;
     letter-spacing: 6px;
     text-align: center;

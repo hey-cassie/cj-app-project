@@ -1,0 +1,9 @@
+.text-mont {
+    font-family: Montserrat;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+  }
+
+  .border-no {
+    border: none;
+  }
