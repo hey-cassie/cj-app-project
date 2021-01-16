@@ -1,25 +1,39 @@
+<!--Refactored Code!-->
 <div class="container">
+<div class="card-deck">
+  <div class="card border-no"
+  *ngFor="let skill of skills">
+ <img class="card-img-top mx-auto d-block" [src]="skill.icon" style="width:140px;" alt="Card image">
+ <div class="card-body">
+   <h5 class="card-title text-mont text-center">{{ skill.title | uppercase }}</h5>
+   <p class="card-text">{{ skill.description }}</p>
+ </div>
+</div>
+</div>
+</div>
+
+<!--<div class="container">
 <div class="card-deck">
     <div class="card border-no">
    <img class="card-img-top mx-auto d-block" src="assets/images/huahua.svg" style="width:140px;" alt="Card image">
    <div class="card-body">
-     <h5 class="card-title text-mont text-center">Illustration</h5>
+     <h6 class="card-title text-mont text-center">Illustration</h6>
      <p class="card-text">{{illustration}}</p>
    </div>
  </div>
       <div class="card border-no">
    <img class="card-img-top mx-auto d-block" src="assets/images/registration.svg" style="width:140px;" alt="Card image">
    <div class="card-body">
-     <h5 class="card-title text-mont text-center">Graphic Design</h5>
+     <h6 class="card-title text-mont text-center">Graphic Design</h6>
      <p class="card-text">{{graphicDesign}}</p>
    </div>
  </div>
       <div class="card border-no">
    <img class="card-img-top mx-auto d-block" src="assets/images/ufo.svg" style="width:140px;" alt="Card image">
    <div class="card-body">
-     <h5 class="card-title text-mont text-center">Front End Web Dev</h5>
+     <h6 class="card-title text-mont text-center">Front End Web Dev</h6>
      <p class="card-text">{{webDev}}</p>
    </div>
  </div>
 </div> 
-</div> 
+</div>-->

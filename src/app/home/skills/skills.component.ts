@@ -7,9 +7,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SkillsComponent implements OnInit {
 
-  illustration = 'I like drawing my dog. I also love drawing test test test test test';
-  graphicDesign = 'Whatever you need, I can do, test test test test test';
-  webDev = 'Brand new to this, but having a blast learning! test test test test test'
+  skills = [
+    {
+      icon: 'assets/images/huahua.svg',
+      title: 'Illustration',
+      description: 'I like to draw my pup! Test test test!'
+    },
+    {
+      icon: 'assets/images/registration.svg',
+      title: 'Graphic Design',
+      description: 'Test test test!'
+    },
+    {
+      icon: 'assets/images/ufo.svg',
+      title: 'Front End Web Development',
+      description: 'Still brand new to this, but having a blast learning!'
+    },
+  ]
 
   constructor() { }
 

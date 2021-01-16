@@ -2,11 +2,11 @@
   <div>
   <ul class="nav navbar-nav">
     <li routerLinkActive="active">
-      <a routerLink="/about" class="text-uppercase text-decoration-none white text-vert mt-padding">about</a>
+      <a routerLink="/about" class="text-decoration-none mont-font mt-padding">{{ about | uppercase }}</a>
     </li>
     <hr class="hr-yellow">
     <li routerLinkActive="active">
-      <a routerLink="/contact" class="text-uppercase text-decoration-none white text-vert">let's get to work</a>
+      <a routerLink="/contact" class="text-decoration-none mont-font">{{ getToWork | uppercase }}</a>
     </li>
 </ul>
   </div>

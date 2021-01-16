@@ -13,20 +13,13 @@
     background-color: black;
   }
     
-  .white {
+  .mont-font {
     font-family: 'Montserrat';
     letter-spacing: 6px;
     font-size: 20px;
     color: white;
-  }
-
-  .text-vert {
     writing-mode: vertical-rl;
     text-orientation: mixed;
-  }
-
-  .text-mont {
-    font-family: Montserrat;
   }
 
   .mt-padding {

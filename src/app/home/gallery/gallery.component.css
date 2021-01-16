@@ -1,0 +1,9 @@
+.row {
+    margin: 25px;
+  }
+
+  .text-mont {
+    font-family: Montserrat;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+  }

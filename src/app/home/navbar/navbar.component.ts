@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
+  about = 'about';
+  getToWork = "let's get to work!";
+
   constructor() { }
 
   ngOnInit(): void {

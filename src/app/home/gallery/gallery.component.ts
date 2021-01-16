@@ -10,6 +10,10 @@ export class GalleryComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    // $(document).on("click", '[data-toggle="lightbox"]', function(event) {
+    //   event.preventDefault();
+    //   $(this).ekkoLightbox();
+    // });
   }
 
 }
