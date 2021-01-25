@@ -1,12 +1,12 @@
 <!--Refactored Code!-->
-<div class="container">
+<div class="container skills-top">
 <div class="card-deck">
   <div class="card border-no"
   *ngFor="let skill of skills">
  <img class="card-img-top mx-auto d-block" [src]="skill.icon" style="width:140px;" alt="Card image">
  <div class="card-body">
    <h5 class="card-title text-mont text-center">{{ skill.title | uppercase }}</h5>
-   <p class="card-text">{{ skill.description }}</p>
+   <p class="card-text text-center">{{ skill.description }}</p>
  </div>
 </div>
 </div>

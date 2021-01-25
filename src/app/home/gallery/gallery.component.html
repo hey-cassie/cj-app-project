@@ -1,27 +1,23 @@
-<!--Testing Lightbox Gallery Below-->
 <div class="container">
-    <hr>
-    <h3 class="text-mont text-center">Recent Work</h3>
-    <div class="row">
-      <a href="assets/images/photos/IMG_8460.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
-        <img src="assets/images/photos/IMG_8460.jpg" class="img-fluid rounded">
-      </a>
-      <a href="https://unsplash.it/1200/768.jpg?image=252" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
-        <img src="https://unsplash.it/600.jpg?image=252" class="img-fluid rounded">
-      </a>
-      <a href="https://unsplash.it/1200/768.jpg?image=253" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
-        <img src="https://unsplash.it/600.jpg?image=253" class="img-fluid rounded">
-      </a>
+  <hr>
+  <h3 class="text-mont text-center pt-5">Recent Work</h3>
+</div>
+  <div class="row" id="gallery">
+    <div class="col-12 col-sm-6 col-lg-4"
+    *ngFor="let image of images; let i = index">
+        <img src="{{ image.thumbnail }}" (click)="openModal();currentSlide(i+1)" 
+        class="hover-shadow cursor mb-4 rounded">
     </div>
-    <div class="row">
-      <a href="https://unsplash.it/1200/768.jpg?image=254" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
-        <img src="https://unsplash.it/600.jpg?image=254" class="img-fluid rounded">
-      </a>
-      <a href="https://unsplash.it/1200/768.jpg?image=255" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
-        <img src="https://unsplash.it/600.jpg?image=255" class="img-fluid rounded">
-      </a>
-      <a href="https://unsplash.it/1200/768.jpg?image=256" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
-        <img src="https://unsplash.it/600.jpg?image=256" class="img-fluid rounded">
-      </a>
+  </div>
+  <div id="imgModal" class="slide-modal">
+    <span class="close cursor" (click)="closeModal()">&times;</span>
+    <div class="slide-modal-content">
+        <div class="img-slides"
+        *ngFor="let image of images; let i = index">
+            <img src="{{ image.thumbnail }}" alt="{{ image.title }}">
+            <p class="pt-3 w-100 text-center"><i>{{ image.caption }}</i></p>
+        </div>
+        <a class="prev" (click)="plusSlides(-1)">&#10094;</a>
+        <a class="next" (click)="plusSlides(1)">&#10095;</a>
     </div>
   </div>

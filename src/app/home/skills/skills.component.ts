@@ -11,17 +11,19 @@ export class SkillsComponent implements OnInit {
     {
       icon: 'assets/images/huahua.svg',
       title: 'Illustration',
-      description: 'I like to draw my pup! Test test test!'
+      description: 'I get a kick out of illustrating different aspects of my life with a quirky attention to detail and an often satirical bent. I especially enjoy drawing my dog.',
+      toolTitle: '',
+      toolText: ''
     },
     {
       icon: 'assets/images/registration.svg',
       title: 'Graphic Design',
-      description: 'Test test test!'
+      description: 'As a designer, I aim for minimal, thoughtful design with the right amount of personality and fun.'
     },
     {
       icon: 'assets/images/ufo.svg',
       title: 'Front End Web Development',
-      description: 'Still brand new to this, but having a blast learning!'
+      description: 'I’m new to this, but the challenge of coding things from scratch and bringing my ideas to life in the browser is a blast!'
     },
   ]
 

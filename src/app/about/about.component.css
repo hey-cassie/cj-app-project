@@ -7,3 +7,26 @@
     text-transform: uppercase;
     letter-spacing: 4px;
   }
+
+  /*link styling below*/
+  a:link {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  a:visited {
+    color: #F79221;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #9989C1;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:active {
+    color: #FEDB46;
+    background-color: transparent;
+    text-decoration: none;
+  }
