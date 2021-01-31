@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -14,6 +15,8 @@ import { GalleryComponent } from './home/gallery/gallery.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ContactFooterComponent } from './contact/contact-footer/contact-footer.component';
 import { HomeFooterComponent } from './home/home-footer/home-footer.component';
+import { MagicApiComponent } from './home/magic-api/magic-api.component';
+
 
 @NgModule({
   declarations: [
@@ -28,11 +31,13 @@ import { HomeFooterComponent } from './home/home-footer/home-footer.component';
     SkillsComponent,
     GalleryComponent,
     ContactFooterComponent,
-    HomeFooterComponent
+    HomeFooterComponent,
+    MagicApiComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

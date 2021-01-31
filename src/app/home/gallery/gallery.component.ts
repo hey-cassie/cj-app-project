@@ -48,7 +48,7 @@ export class GalleryComponent implements OnInit {
       image: '',
       thumbnail: '/assets/images/gallery-pics/tn30.jpg',
       title: 'test',
-      caption: "Branding for Trailnet's 30th anniversay"
+      caption: 'Branding for Trailnet\'s 30th anniversay'
     },
     {
       image: '',
@@ -106,7 +106,7 @@ export class GalleryComponent implements OnInit {
    showSlides(n) {
     let i;
     const slides = document.getElementsByClassName("img-slides") as HTMLCollectionOf < HTMLElement > ;
-    const dots = document.getElementsByClassName("images") as HTMLCollectionOf < HTMLElement > ;
+    const img = document.getElementsByClassName("images") as HTMLCollectionOf < HTMLElement > ;
     //const captionText = document.getElementById("caption");
     if (n > slides.length) {
      this.slideIndex = 1
@@ -117,12 +117,12 @@ export class GalleryComponent implements OnInit {
     for (i = 0; i < slides.length; i++) {
      slides[i].style.display = "none";
     }
-    for (let j = 0; j < dots.length; j++) {
-     dots[j].className = dots[j].className.replace("active", "");
+    for (let j = 0; j < img.length; j++) {
+     img[j].className = img[j].className.replace("active", "");
     }
     slides[this.slideIndex - 1].style.display = "block";
-    if (dots && dots.length > 0) {
-     dots[this.slideIndex - 1].className += "active";
+    if (img && img.length > 0) {
+     img[this.slideIndex - 1].className += "active";
      //captionText.innerHTML = dots[this.slideIndex-1].alt;
     }
    }

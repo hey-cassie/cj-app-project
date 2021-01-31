@@ -1,0 +1,49 @@
+.text-mont {
+  font-family: Montserrat;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
+  padding: -3px;
+}
+
+.text-mont-response {
+  font-family: Montserrat;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.border-no {
+    border: none;
+  }
+
+.border-2 {
+    border-width:2px !important;
+    border-radius:30px !important;
+}
+
+.btn:focus, .btn:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.btn:hover {
+    background-color: black !important;
+    color: #F79221 !important;
+}
+
+.btn-custom {
+  background-color: #FEDB46 !important;
+  color: black !important; 
+}
+
+.bg-custom {
+  background-image: url('src/assets/images/wordBub-01.svg');
+  background-repeat: no-repeat;
+  background-size: 95%;
+  margin-top: -50px;
+}
+
+.margin-custom {
+  margin-left: 250px;
+}

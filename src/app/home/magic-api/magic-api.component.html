@@ -1,0 +1,16 @@
+<div class="container mb-5 mt-5">
+    <div class="card mb-12 border-no">
+        <div class="row no-gutters">
+          <div class="col-md-3 margin-custom">
+            <img 
+            src="assets/images/8ball-01.svg" class="card-img" width="100px" alt="Magic 8 Ball">
+            <button class="btn mt-4 border-2 btn-custom text-mont" type="button" (click)="onRefreshFortune()">Is today going to be a good day?</button>
+          </div>
+          <div class="col-md-3 bg-custom" *ngIf="display">
+            <div class="card-body" >
+              <p class="card-text pt-5 text-center text-mont-response mt-5">{{ answer }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
