@@ -37,11 +37,25 @@
   color: black !important; 
 }
 
-.bg-custom {
-  background-image: url('src/assets/images/wordBub-01.svg');
+.bg-affirmative {
+  background-image: url('src/assets/images/wordBubGreen-01.svg');
   background-repeat: no-repeat;
-  background-size: 95%;
-  margin-top: -50px;
+  background-size: 100%;
+  margin-top: -20px;
+}
+
+.bg-neutral {
+  background-image: url('src/assets/images/wordBubPurple-01.svg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-top: -20px;
+}
+
+.bg-contrary{
+  background-image: url('src/assets/images/wordBubOrange-01.svg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-top: -20px;
 }
 
 .margin-custom {

@@ -8,6 +8,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class MagicApiComponent implements OnInit {
   public answer = '';
+  public type = '';
   display = false;
 
   constructor(private http: HttpClient) { }
@@ -22,6 +23,8 @@ export class MagicApiComponent implements OnInit {
     .then(response => response.json())
     .then(json => {
         this.answer = json.magic.answer;
+        this.type = json.magic.type;
+        console.log(this.type);
     });
       this.display = true;
   }

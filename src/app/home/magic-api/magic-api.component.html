@@ -6,9 +6,19 @@
             src="assets/images/8ball-01.svg" class="card-img" width="100px" alt="Magic 8 Ball">
             <button class="btn mt-4 border-2 btn-custom text-mont" type="button" (click)="onRefreshFortune()">Is today going to be a good day?</button>
           </div>
-          <div class="col-md-3 bg-custom" *ngIf="display">
+          <div class="col-md-2 bg-affirmative" *ngIf="display && type === 'Affirmative'">
             <div class="card-body" >
-              <p class="card-text pt-5 text-center text-mont-response mt-5">{{ answer }}</p>
+              <p class="card-text pt-5 text-center text-mont-response mt-1">{{ answer }}</p>
+            </div>
+          </div>
+          <div class="col-md-2 bg-neutral" *ngIf="display && type === 'Neutral'">
+            <div class="card-body" >
+              <p class="card-text pt-5 text-center text-mont-response mt-1">{{ answer }}</p>
+            </div>
+          </div>
+          <div class="col-md-2 bg-contrary" *ngIf="display && type === 'Contrary'">
+            <div class="card-body" >
+              <p class="card-text pt-5 text-center text-mont-response mt-1">{{ answer }}</p>
             </div>
           </div>
         </div>
