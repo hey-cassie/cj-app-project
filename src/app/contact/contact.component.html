@@ -1,3 +1,159 @@
 <app-toolbar></app-toolbar>
-<p>CONTACT FORM GOES HERE</p>
-<app-contact-footer></app-contact-footer>
+<div class="container">
+    <div class="row"> 
+    <div class="col-xs-12 col-sm-10 col-md-8 offset-sm-1 offset-md-2">
+    <div class="signup-form">
+        <form (ngSubmit)="onSubmit()" #formLocalRef="ngForm">
+            <h2 class="text-center text-mont">SWEET</h2>
+            <p class="text-center">I'm excited to hear about your project!</p>
+            <hr>
+            <div id="user-data">
+            <div class="form-group">
+                <div class="row mt-4">
+                    <div class="col-md-6">
+                        <input 
+                        type="text"
+                        id="name"
+                        class="form-control form-control-lg"
+                        ngModel 
+                        name="name" 
+                        placeholder="Name" 
+                        required
+                        #nameRef="ngModel">
+                        <span class="help-block" *ngIf="!nameRef.valid && nameRef.touched">Please enter a name</span>
+                    </div>
+                    <div class="col-md-6">
+                        <input 
+                        type="email"
+                        id="email"
+                        class="form-control form-control-lg "
+                        ngModel
+                        name="email" 
+                        placeholder="Email" 
+                        required
+                        email
+                        #emailRef="ngModel">
+                        <span class="help-block" *ngIf="!emailRef.valid && emailRef.touched">Please enter a valid email</span>
+                    </div>
+                </div>        	
+            </div>
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-md-6">
+                        <select 
+                        id="projectType"
+                        class="custom-select-lg form-control"
+                        [ngModel]="'Type of Project'"
+                        name="projectType">
+                            <option selected>Type of Project</option>
+                            <option value="Logo / Branding">Logo / Branding</option>
+                            <option value="For print">For print</option>
+                            <option value="Responsive design">Responsive design</option>
+                            <option value="Web app">Web app</option>
+                            <option value="Mobile App">Mobile App</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <select 
+                        id="budget"
+                        class="custom-select-lg form-control"
+                        [ngModel]="'Budget'"
+                        name="budget">
+                            <option selected>Budget</option>
+                            <option value="$200 - $1,000">$200 - $1,000</option>
+                            <option value="$1,000 - $5,000">$1,000 - $5,000</option>
+                            <option value="$5,000+">$5,000+</option>
+                            <option value="Let's talk about it!">Let's talk about it!</option>
+                        </select>
+                    </div>
+                </div>        	
+            </div>
+            <div class="form-group">
+                <textarea
+                type="text"
+                id="details"
+                class="form-control form-control-lg " rows="5" id="comment"
+                ngModel
+                name="details"
+                placeholder="Additional Details">
+                </textarea>
+            </div>
+            <div class="form-group text-center">
+                <button 
+                type="submit" 
+                class="btn btn-lg btn-custom border-2 text-mont"
+                [disabled]="!formLocalRef.valid">SUBMIT</button>
+            </div>
+        </form>
+    </div>
+    </div>
+    <hr>
+    </div>
+    <div class="modal" id="myModal">
+        <div class="modal-dialog" *ngIf="submitted">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close orange-text" (click)="closeModal()">&times;</button>
+                    <h4 class="text-center text-mont mt-3">HECK YEAH! 🙌</h4>
+                    <hr>
+                    <h6 class="text-center">Thanks for reaching out, {{ userInput.name }}! <br>Keep an eye out for an email from me in the next few days.</h6>
+                    <ul class="mb-4">
+                        <li>Email: {{ userInput.email }}</li>
+                        <li>Project Type: {{ userInput.project }}</li>
+                        <li>Budget: {{ userInput.budget }}</li>
+                        <li *ngIf="userInput.deets.length > 0">Additional Deets: {{ userInput.deets }}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+    
+    
+<!--<div class="container">
+      <div class="row">
+          <div class="col-lg-12">
+            <div class="signup-form">
+                <form>
+                    <h2 class="text-center">BYAAAY!</h2>
+                    <p class="text-center">I'm excited to hear about your project!</p>
+                    <div id="user-data">
+                        <div class="form-group offset-md-3">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <input 
+                                    type="text"
+                                    id="name"
+                                    class="form-control input-lg"
+                                    ngModel 
+                                    name="name" 
+                                    placeholder="Name" 
+                                    required
+                                    #nameRef="ngModel">
+                                    <span class="help-block" *ngIf="!nameRef.valid && nameRef.touched">Please enter a name</span>
+                                </div>
+                                <div class="col-md-4">
+                                    <input 
+                                    type="email"
+                                    id="email"
+                                    class="form-control input-lg"
+                                    ngModel
+                                    name="email" 
+                                    placeholder="Email" 
+                                    required
+                                    email
+                                    #emailRef="ngModel">
+                                    <span class="help-block" *ngIf="!emailRef.valid && emailRef.touched">Please enter a valid email</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+          </div>
+      </div>
+  </div>-->
+    

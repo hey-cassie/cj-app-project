@@ -1,1 +1,48 @@
+.container {
+  margin-top: 75px;
+  margin-bottom: 100px;
+}
 
+input.ng-invalid.ng-touched, select.ng-invalid.ng-touched {
+  border: 1px solid #F79221;
+}
+
+ul {
+  display: table;
+  margin: 0 auto;
+}
+
+.orange-text {
+color: #F79221;
+}
+
+.text-mont {
+  font-family: Montserrat;
+  letter-spacing: 4px;
+}
+
+p {
+  font-size: 18px;
+}
+
+/*button below*/
+.border-2 {
+  /*border-width:2px !important;*/
+  border-radius:30px !important;
+}
+
+.btn:focus, .btn:active {
+outline: none !important;
+box-shadow: none !important;
+}
+
+.btn:hover {
+  background-color: black !important;
+  color: #F79221 !important;
+}
+
+.btn-custom {
+margin-top: 30px;
+background-color: #FEDB46 !important;
+color: black !important; 
+}

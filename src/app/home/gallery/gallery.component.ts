@@ -16,6 +16,12 @@ export class GalleryComponent implements OnInit {
   images = [
     {
       image: '',
+      thumbnail: '/assets/images/gallery-pics/friend.JPG',
+      title: 'test',
+      caption: 'Yung Pueblo Poster'
+    },
+    {
+      image: '',
       thumbnail: '/assets/images/gallery-pics/pjThumb-01.svg',
       title: 'test',
       caption: '2020 Paul Carey Logo'

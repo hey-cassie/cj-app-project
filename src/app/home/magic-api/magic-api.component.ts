@@ -24,7 +24,7 @@ export class MagicApiComponent implements OnInit {
     .then(json => {
         this.answer = json.magic.answer;
         this.type = json.magic.type;
-        console.log(this.type);
+        //console.log(this.type);
     });
       this.display = true;
   }
