@@ -6,20 +6,26 @@ describe('GalleryComponent', () => {
   let component: GalleryComponent;
   let fixture: ComponentFixture<GalleryComponent>;
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
+  beforeEach (() => {
+    TestBed.configureTestingModule({
       declarations: [ GalleryComponent ]
-    })
-    .compileComponents();
-  });
-
-  beforeEach(() => {
+    });
     fixture = TestBed.createComponent(GalleryComponent);
-    component = fixture.componentInstance;
+    component = fixture.debugElement.componentInstance;
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create the gallery component', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should render "Recent Work" in a h3 tag', () => {
+    let compiled = fixture.nativeElement;
+    expect(compiled.querySelector('h3').textContent).toContain('Recent Work');
+  });
+
+  // it('openModal() should be triggered on click', () => {
+  //   let compiled = fixture.nativeElement;
+  //   expect(compiled.querySelector('h3').textContent).toContain('Recent Work');
+  // });
 });

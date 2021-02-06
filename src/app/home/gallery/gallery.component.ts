@@ -84,7 +84,7 @@ export class GalleryComponent implements OnInit {
       image: '',
       thumbnail: '/assets/images/gallery-pics/xmasThumb-01.svg',
       title: 'test',
-      caption: '2020 Christmas Card Commission'
+      caption: '2020 Christmas Card'
     },
     {
       image: '',

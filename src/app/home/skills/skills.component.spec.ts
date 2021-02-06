@@ -6,20 +6,22 @@ describe('SkillsComponent', () => {
   let component: SkillsComponent;
   let fixture: ComponentFixture<SkillsComponent>;
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
+  beforeEach (() => {
+    TestBed.configureTestingModule({
       declarations: [ SkillsComponent ]
-    })
-    .compileComponents();
-  });
-
-  beforeEach(() => {
+    });
     fixture = TestBed.createComponent(SkillsComponent);
-    component = fixture.componentInstance;
+    component = fixture.debugElement.componentInstance;
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create the skills component', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('should render correct title in a h5 tag', () => {
+    let compiled = fixture.nativeElement;
+    expect(compiled.querySelector('h5').textContent).toContain('ILLUSTRATION');
+    //expect(compiled.querySelector('h5').textContent).toContain(component.skills.title);
   });
 });

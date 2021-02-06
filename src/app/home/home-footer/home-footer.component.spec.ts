@@ -6,20 +6,16 @@ describe('HomeFooterComponent', () => {
   let component: HomeFooterComponent;
   let fixture: ComponentFixture<HomeFooterComponent>;
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
+  beforeEach (() => {
+    TestBed.configureTestingModule({
       declarations: [ HomeFooterComponent ]
-    })
-    .compileComponents();
-  });
-
-  beforeEach(() => {
+    });
     fixture = TestBed.createComponent(HomeFooterComponent);
-    component = fixture.componentInstance;
+    component = fixture.debugElement.componentInstance;
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create the home-footer component', () => {
     expect(component).toBeTruthy();
   });
 });

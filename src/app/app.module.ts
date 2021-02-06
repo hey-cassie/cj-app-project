@@ -14,7 +14,6 @@ import { NavbarComponent } from './home/navbar/navbar.component';
 import { SkillsComponent } from './home/skills/skills.component';
 import { GalleryComponent } from './home/gallery/gallery.component';
 import { AppRoutingModule } from './app-routing.module';
-import { ContactFooterComponent } from './contact/contact-footer/contact-footer.component';
 import { HomeFooterComponent } from './home/home-footer/home-footer.component';
 import { MagicApiComponent } from './home/magic-api/magic-api.component';
 import { AboutFooterComponent } from './about/about-footer/about-footer.component';
@@ -33,7 +32,6 @@ import { AboutFooterComponent } from './about/about-footer/about-footer.componen
     NavbarComponent,
     SkillsComponent,
     GalleryComponent,
-    ContactFooterComponent,
     HomeFooterComponent,
     MagicApiComponent,
     AboutFooterComponent

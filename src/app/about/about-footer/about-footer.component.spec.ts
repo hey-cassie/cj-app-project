@@ -1,4 +1,4 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { AboutFooterComponent } from './about-footer.component';
 
@@ -6,20 +6,16 @@ describe('AboutFooterComponent', () => {
   let component: AboutFooterComponent;
   let fixture: ComponentFixture<AboutFooterComponent>;
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
+  beforeEach (() => {
+    TestBed.configureTestingModule({
       declarations: [ AboutFooterComponent ]
-    })
-    .compileComponents();
-  });
-
-  beforeEach(() => {
+    });
     fixture = TestBed.createComponent(AboutFooterComponent);
-    component = fixture.componentInstance;
+    component = fixture.debugElement.componentInstance;
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create the about-footer component', () => {
     expect(component).toBeTruthy();
   });
 });
