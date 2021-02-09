@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
 
+
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
@@ -28,10 +29,14 @@ export class ContactComponent implements OnInit {
   }
 
   closeModal() {
+    this.userInput.deets = '';
     document.getElementById("myModal").style.display = "none";
   }
 
-  onSubmit() {
+  onSubmit(contactForm) {
+    if (!contactForm.valid) {
+      return;
+    }
     this.openModal();
     this.submitted = true;
     this.userInput.name = this.contactForm.value.name;
@@ -40,8 +45,8 @@ export class ContactComponent implements OnInit {
     this.userInput.budget = this.contactForm.value.budget;
     this.userInput.deets = this.contactForm.value.details;
     this.contactForm.reset({
-      name: 'Name',
-      email: 'Email',
+      name: '',
+      email: '',
       projectType: 'Type of Project',
       budget: 'Budget',
       deets: ''

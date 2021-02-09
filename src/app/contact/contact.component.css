@@ -25,6 +25,10 @@ p {
   font-size: 18px;
 }
 
+/*option[value=""][disabled] {
+  display: none;
+}*/
+
 /*button below*/
 .border-2 {
   /*border-width:2px !important;*/

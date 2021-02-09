@@ -28,4 +28,5 @@ describe('GalleryComponent', () => {
   //   let compiled = fixture.nativeElement;
   //   expect(compiled.querySelector('h3').textContent).toContain('Recent Work');
   // });
+  
 });

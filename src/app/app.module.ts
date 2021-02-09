@@ -8,7 +8,6 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
-import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './home/header/header.component';
 import { NavbarComponent } from './home/navbar/navbar.component';
 import { SkillsComponent } from './home/skills/skills.component';
@@ -27,7 +26,6 @@ import { AboutFooterComponent } from './about/about-footer/about-footer.componen
     AboutComponent,
     ContactComponent,
     ToolbarComponent,
-    FooterComponent,
     HeaderComponent,
     NavbarComponent,
     SkillsComponent,

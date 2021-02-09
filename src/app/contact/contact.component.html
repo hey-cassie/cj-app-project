@@ -3,7 +3,7 @@
     <div class="row"> 
     <div class="col-xs-12 col-sm-10 col-md-8 offset-sm-1 offset-md-2">
     <div class="signup-form">
-        <form (ngSubmit)="onSubmit()" #formLocalRef="ngForm">
+        <form (ngSubmit)="onSubmit(formLocalRef)" #formLocalRef="ngForm">
             <h3 class="text-center text-mont">SWEET</h3>
             <p class="text-center">I'm excited to hear about your project!</p>
             <hr>
@@ -46,7 +46,7 @@
                         class="custom-select-lg form-control"
                         [ngModel]="'Type of Project'"
                         name="projectType">
-                            <option selected>Type of Project</option>
+                            <option disabled selected>Type of Project</option>
                             <option value="Logo / Branding">Logo / Branding</option>
                             <option value="For print">For print</option>
                             <option value="Responsive design">Responsive design</option>
@@ -61,7 +61,7 @@
                         class="custom-select-lg form-control"
                         [ngModel]="'Budget'"
                         name="budget">
-                            <option selected>Budget</option>
+                            <option disabled selected>Budget</option>
                             <option value="$200 - $1,000">$200 - $1,000</option>
                             <option value="$1,000 - $5,000">$1,000 - $5,000</option>
                             <option value="$5,000+">$5,000+</option>

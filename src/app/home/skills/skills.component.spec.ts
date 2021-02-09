@@ -19,7 +19,7 @@ describe('SkillsComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  it('should render correct title in a h5 tag', () => {
+  it('should render "ILLUSTRATION" in a h5 tag', () => {
     let compiled = fixture.nativeElement;
     expect(compiled.querySelector('h5').textContent).toContain('ILLUSTRATION');
     //expect(compiled.querySelector('h5').textContent).toContain(component.skills.title);

@@ -28,21 +28,9 @@ export class GalleryComponent implements OnInit {
     },
     {
       image: '',
-      thumbnail: '/assets/images/gallery-pics/blm.jpg',
+      thumbnail: '/assets/images/gallery-pics/rfThumb-01.svg',
       title: 'test',
-      caption: 'Black Lives Matter Screenprint'
-    },
-    {
-      image: '',
-      thumbnail: '/assets/images/gallery-pics/sskcThumb-01.svg',
-      title: 'test',
-      caption: '2020 Single Speed Kansas City Logo'
-    },
-    {
-      image: '',
-      thumbnail: '/assets/images/gallery-pics/bat.jpg',
-      title: 'test',
-      caption: 'Hang in there, Baby! Screenprint'
+      caption: 'Ride Finds Logo!'
     },
     {
       image: '',
@@ -52,9 +40,15 @@ export class GalleryComponent implements OnInit {
     },
     {
       image: '',
-      thumbnail: '/assets/images/gallery-pics/tn30.jpg',
+      thumbnail: '/assets/images/gallery-pics/YDA_Mockup-01.svg',
       title: 'test',
-      caption: 'Branding for Trailnet\'s 30th anniversay'
+      caption: 'East St. Louis Youth Development brand identity'
+    },
+    {
+      image: '',
+      thumbnail: '/assets/images/gallery-pics/blm.JPG',
+      title: 'test',
+      caption: 'Black Lives Matter Screenprint'
     },
     {
       image: '',
@@ -64,9 +58,27 @@ export class GalleryComponent implements OnInit {
     },
     {
       image: '',
+      thumbnail: '/assets/images/gallery-pics/bat.JPG',
+      title: 'test',
+      caption: 'Hang in there, Baby! Screenprint'
+    },
+    {
+      image: '',
       thumbnail: '/assets/images/gallery-pics/zombie2020.jpg',
       title: 'test',
-      caption: 'I Survived 2020 stickers'
+      caption: 'I Survived 2020 illustration'
+    },
+    {
+      image: '',
+      thumbnail: '/assets/images/gallery-pics/tn30.jpg',
+      title: 'test',
+      caption: 'Branding for Trailnet\'s 30th anniversay'
+    },
+    {
+      image: '',
+      thumbnail: '/assets/images/gallery-pics/sskcThumb-01.svg',
+      title: 'test',
+      caption: '2020 Single Speed Kansas City Logo'
     },
     {
       image: '',
@@ -88,7 +100,7 @@ export class GalleryComponent implements OnInit {
     },
     {
       image: '',
-      thumbnail: '/assets/images/gallery-pics/r2l.jpg',
+      thumbnail: '/assets/images/gallery-pics/r2l-01.svg',
       title: 'test',
       caption: 'CrossFit Ready 2 Live Logo'
     },
