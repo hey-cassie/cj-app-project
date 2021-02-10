@@ -21,4 +21,6 @@ describe('MagicApiComponent', () => {
   it('should create the magic-api component', () => {
     expect(component).toBeTruthy();
   });
+
+  //would like to test if data is fetched!
 });

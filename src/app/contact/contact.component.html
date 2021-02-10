@@ -106,7 +106,7 @@
                         <li>Email: {{ userInput.email }}</li>
                         <li>Project Type: {{ userInput.project }}</li>
                         <li>Budget: {{ userInput.budget }}</li>
-                        <li *ngIf="userInput.deets.length > 0">Additional Deets: {{ userInput.deets }}</li>
+                        <li *ngIf="userInput.deets">Additional Deets: {{ userInput.deets }}</li>
                     </ul>
                 </div>
             </div>

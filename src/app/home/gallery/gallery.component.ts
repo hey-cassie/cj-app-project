@@ -18,49 +18,49 @@ export class GalleryComponent implements OnInit {
       image: '',
       thumbnail: '/assets/images/gallery-pics/friend.JPG',
       title: 'test',
-      caption: 'Yung Pueblo Poster'
+      caption: 'Yung Pueblo poster'
     },
     {
       image: '',
       thumbnail: '/assets/images/gallery-pics/pjThumb-01.svg',
       title: 'test',
-      caption: '2020 Paul Carey Logo'
+      caption: '2020 Paul Carey logo'
     },
     {
       image: '',
       thumbnail: '/assets/images/gallery-pics/rfThumb-01.svg',
       title: 'test',
-      caption: 'Ride Finds Logo!'
+      caption: 'Ride Finds logo! Yeeeew!'
     },
     {
       image: '',
       thumbnail: '/assets/images/gallery-pics/pogoThumb-01.svg',
       title: 'test',
-      caption: 'St. Louis Pogo Club Logo'
+      caption: 'St. Louis Pogo Club logo'
     },
     {
       image: '',
       thumbnail: '/assets/images/gallery-pics/YDA_Mockup-01.svg',
       title: 'test',
-      caption: 'East St. Louis Youth Development brand identity'
+      caption: 'East St. Louis Youth Development Alliance brand identity'
     },
     {
       image: '',
       thumbnail: '/assets/images/gallery-pics/blm.JPG',
       title: 'test',
-      caption: 'Black Lives Matter Screenprint'
+      caption: 'Black Lives Matter screenprint'
     },
     {
       image: '',
       thumbnail: '/assets/images/gallery-pics/stlFriesThumb-01.svg',
       title: 'test',
-      caption: 'STL Fries Logo'
+      caption: 'STL Fries logo'
     },
     {
       image: '',
       thumbnail: '/assets/images/gallery-pics/bat.JPG',
       title: 'test',
-      caption: 'Hang in there, Baby! Screenprint'
+      caption: 'Hang in there, Baby! screenprint'
     },
     {
       image: '',
@@ -78,31 +78,31 @@ export class GalleryComponent implements OnInit {
       image: '',
       thumbnail: '/assets/images/gallery-pics/sskcThumb-01.svg',
       title: 'test',
-      caption: '2020 Single Speed Kansas City Logo'
+      caption: '2020 Single Speed Kansas City logo'
     },
     {
       image: '',
       thumbnail: '/assets/images/gallery-pics/borThumb-01.svg',
       title: 'sskc test',
-      caption: 'Barf-o-Rama HQ Sticker/Shirt Design'
+      caption: 'Barf-o-Rama HQ sticker/shirt design'
     },
     {
       image: '',
       thumbnail: '/assets/images/gallery-pics/tnSouthCity.jpg',
       title: 'test',
-      caption: 'Trailnet and South City collaboration'
+      caption: 'Trailnet & South City collaboration'
     },
     {
       image: '',
       thumbnail: '/assets/images/gallery-pics/xmasThumb-01.svg',
       title: 'test',
-      caption: '2020 Christmas Card'
+      caption: '2020 Christmas card'
     },
     {
       image: '',
       thumbnail: '/assets/images/gallery-pics/r2l-01.svg',
       title: 'test',
-      caption: 'CrossFit Ready 2 Live Logo'
+      caption: 'CrossFit Ready 2 Live brand identity'
     },
   ]
 

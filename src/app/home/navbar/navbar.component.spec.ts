@@ -18,4 +18,6 @@ describe('NavbarComponent', () => {
   it('should create the navbar component', () => {
     expect(component).toBeTruthy();
   });
+
+  //would like to test for routes here
 });

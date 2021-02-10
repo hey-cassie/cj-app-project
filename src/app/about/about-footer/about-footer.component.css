@@ -23,12 +23,7 @@
     margin: 0;
     padding: 0;
   }
-  
-  /*body {
-    background: #333;
-    font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  }*/
-  
+ 
   .buttons {
     margin-top: 30px;
     text-align: center;
@@ -141,30 +136,3 @@
       transform: translateZ(0) scale(1.4);
     }
   }
-  
-  
-  
-  
-  
-  
-  
-  
-  /*first footer test
-    .border-2 {
-      border-width:2px !important;
-      border-radius:30px !important;
-  }
-  
-  .btn:hover {
-      background-color: black !important;
-      color: #F79221 !important;
-  }
-  
-  .container {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: center;
-  }*/
-  
-  

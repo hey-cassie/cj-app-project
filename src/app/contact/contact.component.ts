@@ -39,6 +39,7 @@ export class ContactComponent implements OnInit {
     }
     this.openModal();
     this.submitted = true;
+    console.log(this.userInput);
     this.userInput.name = this.contactForm.value.name;
     this.userInput.email = this.contactForm.value.email;
     this.userInput.project = this.contactForm.value.projectType;
