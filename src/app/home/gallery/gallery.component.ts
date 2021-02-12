@@ -24,7 +24,7 @@ export class GalleryComponent implements OnInit {
       image: '',
       thumbnail: '/assets/images/gallery-pics/pjThumb-01.svg',
       title: 'test',
-      caption: '2020 Paul Carey logo'
+      caption: '2020 @paulcarey4 logo'
     },
     {
       image: '',
