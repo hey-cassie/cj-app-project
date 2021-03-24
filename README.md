@@ -1,4 +1,5 @@
 # CjAppProject
+Personal website meant to highlight my work as a graphic designer and illustrator. *Please note: this project is a work in progress! A few of the things on my to do list include: setting up a "back end" with Firebase for form submission and making the app mobile-friendly :)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.2.
 
